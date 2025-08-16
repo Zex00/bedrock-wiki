@@ -104,6 +104,9 @@ And that's it! You now have a working button, clicking on it exits you to the cu
 
 In order to make buttons that shows a text when you hover into it, we will need to use **Content Buttons**.
 
+**Note** `common.hover_text` with `ignored: "$default_state"` must be placed inside the **`controls` of a content definition** (used by a content button). 
+If it is placed elsewhere, the hover text will either not appear at all, or it may glitch the UI by staying visible indefinitely.
+
 In this example, we will reference `ui/ui_template_buttons.json` and `ui/ui_common.json`
 
 <CodeHeader>RP/ui/your_file.json</CodeHeader>
